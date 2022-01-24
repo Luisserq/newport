@@ -51,6 +51,13 @@ body {
     float: left;
   }
   
+
+  @media screen and (min-width: 40em)
+    .data {
+      max-width: 99%;
+    }
+  }
+
   @media screen and (min-width: 35em) {
     .half {
       width: 50%;
