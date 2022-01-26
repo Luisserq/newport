@@ -5,6 +5,13 @@
 --primaryColor: #C2B2D2;
 }
 
+* {
+  margin:0;
+  padding: 0 0 0 0;
+  outline: none;
+  font-family: "Poppins";
+}
+
 body {
   background-position: top right;
   background-repeat: no-repeat;
@@ -44,7 +51,7 @@ border-width: 2em;
 }
 
 .row {
-margin: 0 -0.5em;
+margin: 2em -0.5em;
 clear: both;
 }
 
@@ -154,10 +161,41 @@ float: left;
 margin-left: 2em;
 }
 
+.hasbnext {
+  opacity: 50%;
+  float: right;
+  border-color: white;
+  text-decoration: none;
+  }
+
+.fibprev {
+  opacity: 100%;
+  border-color: gray;
+  background-color: whitesmoke;
+  text-decoration: none;
+  float: left;
+  margin-left: 2em;
+}
+
+.fibprev:hover {
+  cursor: pointer;
+  color: black;
+  background-color: var(--primaryColor);
+  }
+
+  .hasbsketch{
+    width: 220%;
+  }
+
 .ppnext {
 float: right;
 border-color: gray;
 background-color: whitesmoke;
+}
+
+.fibSketches{
+  text-align: center;
+
 }
 
 .ppnext:hover {
@@ -303,6 +341,7 @@ margin-bottom: 0.75em;
 .page-header {
 border-bottom: 1px solid var(--primaryColor);
 text-align: center;
+margin-top: 2em;
 }
 
 .page-header .group:before {
@@ -332,6 +371,7 @@ margin: 0;
 }
 .page-header .main-nav ul:hover {
 cursor: pointer;
+
 }
 .page-header .main-nav li {
 display: inline-block;
@@ -339,12 +379,19 @@ display: inline-block;
 .page-header .main-nav a {
 display: inline-block;
 background: var(--primaryColor);
-color: var(--wh);
+color: black;
 text-decoration: none;
 padding: 10px 30px;
 margin: 0.25em 0;
 line-height: 1.1;
 }
+.page-header .main-nav a:hover {
+  background-color: whitesmoke;
+  border-width: 1px;
+  border-color: black;
+  border: black;
+}
+
 @media screen and (min-width: 40em) {
 .page-header {
 text-align: left;
@@ -475,9 +522,96 @@ margin: 0 -100em;
 
 @media screen and (min-width: 30em) {
   .hire {
-    size: auto;
-    margin-left: 200m;
-    margin-right: 200em;
+    clear: both;
+    margin: 0em 0em 0em 0em ;
+    background-color: #C2B2D2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--whiteColor);
+    justify-content: center;
+    padding: 2rem 1rem;
+    position: relative;
+    background-color: var(--fontColor);
+    overflow: hidden;
+  }
+
+  .hire .top-title {
+    color: var(--primaryColor);
+  }
+  
+  .hire-wrapper {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .hire-wrapper > button {
+    margin: 1rem 0;
+    padding: 0.6rem 3rem;
+    border: 2px solid var(--primaryColor);
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    width:175px;
+  }
+  
+  .hire-wrapper > a {
+    margin-top: -6em;
+    font-size: 16px;
+    padding: 0.6rem 3rem;
+    background-color: var(--fontColor);
+    border-color: var(--fontColor);
+    color: var(--whiteColor);
+    width:300px;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .hire-wrapper > a:hover {
+    margin-top: -6em;
+    padding: 0.6rem 3rem;
+    border: 2px solid var(--fontColor);
+    background-color: transparent;
+    color: var(--primaryColor);
+    width:300px;
+    justify-content: center;
+  }
+  
+  .hire-wrapper > button:hover {
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 80%;
+    padding: 0.5rem 0;
+    bottom: 0;
+    text-align: center;
+    margin-top: 1em;
+    color: var(--primaryColor);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--primaryColor);
+  }
+  
+  .social-media {
+    display: flex;
+    text-decoration: none;
+    width: 400px;
+    size: 2em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    justify-content: center;
+  
+  }
+  
+  .social-media > a {
+    text-decoration: none;
+    color: var(--whiteColor);
+    font-size: 1.1rem;
+    padding-right: 10px;
+  }
+  
+  .social-media > a:hover {
+    color: var(--primaryColor);
   }
 
   .ppprev{
@@ -487,20 +621,17 @@ margin: 0 -100em;
 }
 
 @media screen and (min-width: 40em) {
-  .footer {
-    width: 2em;
-  }
 
   .ppprev{
     margin-left: 2em;
     margin-bottom: -10.1em;
   }
+
 }
 
 
 
 .hire {
-  clear: both;
   margin: 0em -25em 0 -30em ;
   background-color: #C2B2D2;
   display: flex;
