@@ -15,12 +15,15 @@
    
   <title>Personal Portfolio Website</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics 2 -->
     
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y8SWP0854Y"></script>
 
 
 </head>
+<body>
+  
+
 
 <div class="header">
   <header class="page-header group">
@@ -31,11 +34,13 @@
     <nav class="main-nav">
       <ul>
         <li><a onclick="window.location.href='index.html'">Home</a></li>
-        <a href="#hire">Contact</a>
+        <li><a href="#hire">Contact</a></li>
       </ul>
       <br>
-      <button title="ppprev" class="ppprev">Previous Project</button>
-      <button title="ppnext" class="ppnext" onclick="window.location.href='fib.html'">Next Project</button>
+      <div class="buttons">
+        <button title="ppprev" class="ppprev">Previous Project</button>
+        <button title="ppnext" class="ppnext" onclick="window.location.href='fib.html'">Next Project</button>
+      </div>
     </nav>
   </header>
 </div>
@@ -79,7 +84,7 @@
 
      <h2 class="subway">The Challenge</h2>
      <br>   
-     <dd>For my last project in my UI/UX Bootcamp, we were in charge of either redesigning an existing  non-profit website or creating a 
+     <dd>For my last project in my UI/UX Bootcamp, we were in charge of either redesigning an existing non-profit website or creating a 
        mobile app or website entirely from scratch. We went ahead and chose to create PawPup, a mobile app designed for dog-owners who want 
        to socialize with other dog-owners in the area. That way we foster a community both dog and people can be a part of. We pulled much of 
        the inspiration from modern dating apps like Bumble and Tinder.
@@ -134,6 +139,7 @@
         <dl>
           <dt>User Journey</dt>
         </dl>
+
         <div class="PPuserJourndiv">
             <dd>Our user scenario and journey map focuse on Matthew Brown, a car salesman in his mid-20s who is currently unsatisfied 
                 with his social life and skees out new opportunities to make friends. He also has a dog who he feels he has
@@ -146,8 +152,8 @@
             <img class="PPuserJourn" src="Images/PPuserJourn.jpg"/>
         </div>
           <br></br>
-          </div>
-        
+          
+      
         <h2 class="subway">Ideating</h2>
         <br>
         
@@ -156,13 +162,14 @@
         </dl>
 
         <div class="userflowdiv">
-            <img class="ppuserflow" id ="ppuserflow" src="Images/ppuserflow.png"/>
+          <img class="ppuserflow" id ="ppuserflow" src="Images/ppuserflow.png"/>
         </div>        
         <dl>
           <dt style="color:#072AD0"><b>Pawpup Sitemap</b></dt>
-          </dl>
+        </dl>
+
         <div class="sitemapdiv">
-            <img src="Images/ppsitemap.png"/>
+          <img src="Images/ppsitemap.png"/>
         </div>
 
         <br>
@@ -173,19 +180,17 @@
         <dl>
           <dt style="color:#072AD0"><b>Sketching</b></dt>
         </dl>
-        <div class="row">
+        
 
         <br>
           <div class="ppSketches">
             <dd>Once our user was created we planned on mapping out a potential prototype using hand drawn sketches 
               of a lo-fi version of Pawpup. This would be our base for bringing all our ideas together and discuss 
-              what best suits the needs of our users.
-          </dd>
+              what best suits the needs of our users.</dd>
             <img src="Images/ppSketches.png"/>
 
           </div>
           <br><br>
-        </div>
           <dl>
             <dt style="color:#072AD0"><b>Low-Fidelity Prototype</b></dt>
           <dd>After coming up with a rough idea with what we all wanted we began working on a low-fidelity prototype we 
@@ -193,7 +198,8 @@
             on was having a lower-navigation bar, a swiping mechanic similar to Bumble and Tinder, and questionnaire or 
             survey of some sort to set users’ preferences. </dd>
         </dl>  
-        <div class="row">
+
+        <div class="row test">
           <div class="column one third">
             <figure>
                 <img src="Images/pplofi1.png"/>
@@ -210,15 +216,16 @@
             </figure>
           </div>
         </div>
-          <dl>
+
+      <dl>
       <dt style="color:#072AD0"><b>High-Fidelity Prototype</b></dt>
       <dd>After conducting a total of 7 usability interviews who were a mix of friends, family and other UI/UX design 
         students we were able to iterate on it in order for PawPup to be the best it could. We went with a vibrant orange 
         and blue color combination because we wanted to keep a friendly and welcoming themes to our users. I also found that 
         colors like blue and yellow are the colors which dogs are most responsive since they are blind to colors like red and green. </dd>
-    </dl> 
+      </dl> 
         
-              <div class="row">
+        <div class="row test">
           <div class="column one third">
             <figure>
                 <img src="Images/pphifi1.png"/>
@@ -235,6 +242,7 @@
             </figure>
           </div>
         </div>
+
     <div class="row">
 
       <dl>
@@ -248,7 +256,8 @@
         <br>
       <div class="ppiter1">
         <img src="Images/ppiter1.png"/>
-    </div>
+      </div>
+
     <br><br>
 
       </dl> 
@@ -271,6 +280,7 @@
                 <img src="Images/iteration2&3.png"/>
             </div>
         </dl> 
+    </div>   
     
      
       <h2 class="subway">Conclusions</h2>
@@ -293,9 +303,20 @@
           functioned pretty well as a team. 
         </p>
       </article>
-    </main>
+  </main>
 </div>
 
+<div class="proto">
+  <a  class="pawproto" target = "_blank" href ="https://www.figma.com/proto/YC9esaoeFXkDPGJCpTuwwy/PawPup-Project?node-id=6336%3A9576&scaling=scale-down&page-id=6276%3A2528&starting-point-node-id=6336%3A9576">Figma Prototype</a>
+  <a  class="pawproto" target = "_blank" href ="https://kristentlbt.github.io/PawPup/index.html">Coded Prototype</a>
+</div>
+
+<br><br>
+
+<div class="buttons">
+  <button title="ppprev" class="ppprev">Previous Project</button>
+  <button title="ppnext" class="ppnext" onclick="window.location.href='fib.html'">Next Project</button>
+</div>
       
   <section class="hire" id="hire">
     <span class="top-title">CONTACT ME</span>
@@ -317,7 +338,8 @@
   </section>
   
   
-  <script src="app.js"></script>
+<script src="app.js"></script>
+</body>
 </html>
       
 
