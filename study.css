@@ -32,7 +32,6 @@ body {
 @media screen and (min-width: 40em) {
   body {
   line-height: 1.5;
-  background-image: url(Images/ppdog.png);
   position: top left;
   }
 }
@@ -170,6 +169,7 @@ a {
   opacity: 50%;
   border-color: white;
   text-decoration: none;
+  padding: 0.4em;
   /*float: left;*/
   margin-left: 2em;
 }
@@ -178,6 +178,7 @@ a {
   opacity: 50%;
   /*float: right;*/
   border-color: white;
+  padding: 0.4em;
   text-decoration: none;
 }
 
@@ -186,6 +187,7 @@ a {
   border-color: gray;
   background-color: whitesmoke;
   text-decoration: none;
+  padding: 0.4em;
   /*float: left;*/
   margin-left: 2em;
 }
@@ -204,6 +206,7 @@ a {
   /*float: right;*/
   border-color: gray;
   background-color: whitesmoke;
+  padding: 0.4em;
 }
 
 .fibSketches{
@@ -595,6 +598,10 @@ margin: 0 -100em;
   .fibprev{
     margin-left: -0.1em;
     margin-bottom: 1em;
+  }
+
+  .pawproto{
+    padding: 16px 20px 16px 20px;
   }
 }
 
